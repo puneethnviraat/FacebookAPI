@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+   
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+
+  
+   <style type="text/css">
+
+      body{
+        padding: 3%;
+        cursor: pointer;
+      }
+
+      .card {
+        background-color: #ffffff;
+        border-radius: 2px;
+        box-shadow: 0 -1px 0 rgba(0, 0, 0, 0.06), 0 0 3px rgba(0, 0, 0, 0.18), 0 1px 3px rgba(0, 0, 0, 0.18);
+        display: block;
+        display: -webkit-flex;
+        display: -ms-flexbox;
+        display: flex;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        transition: box-shadow 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+        position: relative;
+      }
+
+      .card-inner {
+        margin: 10px 10px;
+        min-width: 0;
+        position: relative;
+      }
+      .card-header .card-inner {
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 16px;
+        margin-bottom: 16px;
+      }
+
+      .no-flexbox .card-header-side + .card-inner, .no-flexbox .tile-side + .card-inner {
+        overflow: hidden;
+      }
+
+      .card-main {
+        -webkit-flex: 1;
+            -ms-flex: 1;
+                flex: 1;
+        min-width: 0;
+      }
+.container{
+  padding-top:40px;
+  background-color:#EAF4FE;
+}
+.header .featured-button__subtitle{color:#000;}
+   </style>
+
+</head>
+<body>
+	<!-- Navigation Bar-->
+    <header>
+        <nav class="navbar navbar-inverse navbar-fixed-top">
+            <div class="container-fluid">
+               <div class="navbar-header"  >
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span> 
+                  </button>
+                  <a class="navbar-brand" href="index.html" style="padding-left: 20px;"><b>Facebook</b></a>
+               </div>
+               <div class="collapse navbar-collapse" id="myNavbar">
+                  <ul class="nav navbar-nav navbar-right" style=" margin-right: 20px;">
+                     <li class="active"><a href="index.html">Home</a></li>
+                     <li><a href="#contact" class="scroll">Feed</a></li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+  </header>
+
+<div class="container">
+  
+    <div class="row">
+      <form >
+        <input type="text" name="link" id="token" placeholder="Enter facebook token here!" style="width:90%">
+        <input type="button" name="go" placeholder="submit" class="button btn-primary" id="facebookBtn">
+      </form>
+    </div>
+     
+      <div class="row">
+      <center>		<h2>Name - <span id="myName"></span> </h2></center>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          
+       
+      <h4 id="personal"> Personal info</h4>
+         <h4 id="details"> Details</h4>
+         <h4 id="Education"> Education</h4>
+         <h4 id="Quotes"> Quotes</h4>
+         <h4 id="Language"> Language</h4>
+
+          </div>
+          <div class="col-md-4">
+
+<p1>
+         first name - <span id="myFirstname"></span><br>
+   
+          Last Name - <span id="myLastname"></span> <br>
+
+          HomeTown - <span id="myHomeTown"></span>
+          </p1>
+          <p2>
+         Birthday - <span id="myBirthday"></span> <br>
+  
+          Gender-<span id="myGender"></span> <br>
+
+         Email - <span id="myEmail"></span> 
+       </p2>
+       <p3>
+           Quotes - <span id="myQuotes"></span> 
+       </p3>  
+       <p4> Education - <span id="myEducation"></span> </p4>
+       <p5> Languages - <span id="myLanguages"></span> </p5>
+            
+          </div>
+         <div class="col-md-4">
+                  <img align="left" class="myProfilePic img-responsive fb-image-profile thumbnail"                
+                 alt="Profile pic"> 
+        </div>
+      </div>
+
+
+
+
+<div class="row">
+
+<img align="left" class="myCoverPic img-responsive" alt="Cover pic" >
+
+     
+
+</div>
+
+</div>
+
+<!-- Latest compiled and minified JavaScript -->
+
+<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script type="text/javascript" src="app1.js"></script>
+
+<script type="text/javascript" src="app.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+
+
+</body>
+
+
+</html>
