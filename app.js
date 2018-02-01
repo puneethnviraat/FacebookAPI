@@ -1,7 +1,7 @@
  // main document ready function to check if dom is loaded fully or not
   $( document ).ready(function() {
 
-   var myFacebookToken = $("#token").val(); 
+   var myFacebookToken =  'EAACEdEose0cBAMtVD8VHZAem5Mid2oyg38nIAKk0Abp1AUASypQmXkSzoagAljIQJ8y8zwJptUhDe20xJ6I2pwofjfkZCjuJGZCChFonPnjzOUpQ6LsSEt69bkBw3sC20mAPZBZCxdu5qlueWA2ZBjZAtkJ3PZCnJpPAx9AvfmoCfUZAkPs0l4MzodbZAucQaVVHsNrinpcp0XAAZDZD';
        function getFacebookInfo(){
 
         $.ajax('https://graph.facebook.com/me?fields=picture.width(250).height(250),cover.width(815).height(320)&access_token=' +myFacebookToken,{
@@ -25,7 +25,9 @@
 
 
         );// end ajax call 
-            $.ajax('https://graph.facebook.com/me?fields=id,name,first_name,last_name,birthday,about,hometown,languages,gender,education,work,relationship_status,quotes,family,website,email,cover&access_token=' +myFacebookToken,{
+
+
+  $.ajax('https://graph.facebook.com/me?fields=id,name,first_name,last_name,birthday,about,hometown,languages,gender,education,work,relationship_status,quotes,family,website,email,cover&access_token=' +myFacebookToken,{
 
                 success : function(response){
                     console.log(response);
