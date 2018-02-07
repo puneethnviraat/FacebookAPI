@@ -1,0 +1,121 @@
+body{
+background-image: url("img.jpg");
+background-repeat: repeat;
+background-color:#E9EBEE;
+}
+
+#facebook{
+  padding-top: 80px;
+}
+#Facebookprofile { 
+  padding-top: 0.5%;
+}
+h1{
+  font-size: 80px;
+}
+
+
+.box{
+        background-color: transparent;
+        width: auto;
+        padding: 2%;
+        margin: 2%;
+        font-size: 20px;
+        font-family: "";
+}
+.pos{
+       text-align: center;
+}
+
+@media (max-width: 992px) {
+    .navbar-header {
+        float: left;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+    top: 0;
+    border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+    margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+      display:block !important;
+    }
+}
+#Facebookfeed{
+  margin-top: 2%;
+}
+button{
+  background-color: #244e91;
+  color: white;
+}
+.sidebar {
+    width: 50%;
+  background-color: transparent;
+    display: block;
+    padding: 2%;
+    margin-top: 5%;
+}
+.sidebar a{
+  color: black;
+  font-size: 17px;
+  font-family: roboto;
+}
+.sidebar a:hover {
+  background-color: #ccc;
+}
+.sidebar a:active{
+  background-color: #4caf50;
+  color: white;
+}
+.fb-profile, .fb-image-lg, .myCoverPic{
+    z-index: 0;
+    width: 200%;  
+    margin-bottom: 10px;
+    height: 315px;
+}
+.fb-image-profile
+{
+    z-index: 9;
+    width: 30%; 
+}
+@media (max-width:768px)
+{
+.fb-image-profile
+{
+    margin: -45px 10px 0px 25px;
+    z-index: 9;
+    width: 20%; 
+}
+}
+.navbar-inverse .navbar-collapse{
+  border-color: #4A6AAA;
+  }
+
+  .container{
+  padding-top:50px;
+}
+#Sub_content{
+  margin-top:50px;
+}
